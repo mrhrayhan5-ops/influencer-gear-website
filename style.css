@@ -72,7 +72,8 @@
 
 .banner-content {
     text-align: left;
-    width: 582px;
+    width: 100%;
+    max-width: 582px;
 }
 
 .banner-heading {
@@ -160,4 +161,34 @@ footer{
 }
 
 /* responsive style */
-
+@media screen and (max-width:576px) {
+   
+    .banner-container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .banner-content{
+        width: 85%;
+    }
+    .banner-image img{
+        width: 90%;
+    }
+    .banner-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+   .card-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .companies{
+        flex-wrap: wrap;
+    }
+    .featured{
+        flex-direction: column-reverse;
+    }
+}
